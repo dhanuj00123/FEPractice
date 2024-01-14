@@ -1,0 +1,13 @@
+.hero-page {
+  height: 918px;
+  background-color: #d4e9e2;
+}
+.hero-image {
+  background-size: contain;
+  height: 918px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/coffee.jpg");
+  mix-blend-mode: multiply;
+}
