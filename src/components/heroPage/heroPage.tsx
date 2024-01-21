@@ -6,7 +6,6 @@ const HeroPage = () => {
       <div className="hero-page">
         <Grid container={true}>
           <Grid item={true} xs={6}></Grid>
-
           <Grid item={true} xs={6}>
             <div className="hero-image"></div>
           </Grid>

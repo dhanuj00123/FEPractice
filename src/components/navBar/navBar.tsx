@@ -9,7 +9,9 @@ import {
 import "./navBar.css";
 import Logo from "../../assets/Logo.png";
 import User from "../../assets/User.svg";
+import { useNavigate } from "react-router-dom";
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <AppBar position="sticky" className="nav-bar">
@@ -25,10 +27,22 @@ const NavBar = () => {
               justifyContent={"space-evenly"}
               alignItems={"center"}
             >
-              <Typography variant="body1" className="nav-link">
+              <Typography
+                variant="body1"
+                className="nav-link"
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
                 Home
               </Typography>
-              <Typography variant="body1" className="nav-link">
+              <Typography
+                variant="body1"
+                className="nav-link"
+                onClick={() => {
+                  navigate("/dashboard");
+                }}
+              >
                 Gift
               </Typography>
               <Typography variant="body1" className="nav-link">
